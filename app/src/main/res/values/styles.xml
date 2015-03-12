@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/title_bar</item>
+        <item name="actionBarStyle">@style/title_bar</item>
+    </style>
+
+    <style name="title_bar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@color/status_bg</item>
+        <item name="logo">@drawable/ic_launcher</item>
+        <item name="android:logo">@drawable/ic_launcher</item>
+        <item name="background">@color/status_bg</item>
+        <item name="android:displayOptions">showTitle|useLogo|showHome</item>
+    </style>
+
+</resources>
