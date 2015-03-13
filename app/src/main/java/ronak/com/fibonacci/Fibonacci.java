@@ -33,13 +33,9 @@ public class Fibonacci {
 
     public String generate_number(int number)
     {
-        if(index>=number)
-        {
-            return bigInteger_numbers.get(number-1).toString();
-        }
-        else
-        {
-            int i=index;
+            if(number==1)
+                return "1";
+            int i=1;
             for(;i<number;i++)
             {
                 c = c.add(a);
@@ -49,9 +45,7 @@ public class Fibonacci {
                 c =BigInteger.ZERO;
                 bigInteger_numbers.add(b);
             }
-            index = number;
             return b.toString();
-        }
     }
 
     public ArrayList<BigInteger> generate_series(int number)
